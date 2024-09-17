@@ -56,7 +56,7 @@ def detecta_cabeca(imagem_cinza, x, y, w, h):
     if circulos_detectados is not None:
         circulos_detectados = np.round(circulos_detectados[0, :]).astype("int")
         for (cx, cy, r) in circulos_detectados:
-            cv2.circle(imagem_cinza, (cx, cy), r, (0, 255, 0), 2)
+            cv2.circle(imagem_cinza, (cx, cy), r, (64, 255, 0), 2)
             cv2.circle(imagem_cinza, (cx, cy), 2, (0, 0, 255), 3)
     
     # Para visualizar o resultado da detecção
